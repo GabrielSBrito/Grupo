@@ -1,0 +1,18 @@
+﻿.cor{
+    background-color: blue;
+}
+
+body{
+    background-color:dodgerblue;
+}
+.centro{
+    text-align:center;
+}
+ul {
+    list-style: none;
+}
+    ul li a:hover {
+        background-color: #D6D6D6;
+        color: #6D6D6D;
+        border-bottom: 3px solid #EA0000;
+    }
