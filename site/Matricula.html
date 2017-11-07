@@ -23,9 +23,7 @@
 
             <form>
                 <label for="NomeMatr">Nome</label><br />
-                <input name="Nome Completo" type="text" required /><br />
-                <label for="Senha">Senha</label><br />
-                <input name="Senha" type="password" required /><br />
+                <input name="Nome Completo" type="text" required /><br/>
                 <label for="cpf">CPF</label><br/>
                 <input name="cpf" type="text" required /><br/>
                 <label for="rg">RG</label><br/>
@@ -34,13 +32,16 @@
                 <input name="end" type="text" required /><br/>
                 <label for="num">Número</label><br/>
                 <input name="num" type="text"/><br/>
-                <label for="curso">Cursos</label><br />
+                <label for="curso">Cursos</label><br/>
                 <select name="curso">
                     <option value="ads">Análise e Desensvolvimento de Sistemas</option>
                     <option value="si">Sistema da Informação</option>
                 </select><br/>
-                <br />
-                <button type="submit">Login</button>
+                <label for="arq">Arquivos</label><br/>
+                <p>RG, CPF, Comprovante de Residência, Histórico Escolar, Foto 3x4</p>
+                <input name="arq_obrigatorio" type="file" required/><br/>
+                <br/>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
