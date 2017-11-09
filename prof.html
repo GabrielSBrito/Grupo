@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -6,123 +6,114 @@
   <title>Área do Professsor</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link  type="text/css" rel="stylesheet" media="screen,projection" href="css/materialize.css"/>
+  <link  type="text/css" rel="stylesheet" media="screen,projection" href="css/style.css"/>
 </head>
-<body>
-   <div>
-        <div class="header">
-            <header>
-                <img src="logo.png" width="200px" />
-                <hr/>
-            </header>
-        
-        
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+<body class="grey darken-1">
+    <main><!--Parte padrão-->
+        <div>
+            <nav class="black" role="navigation">
+                <center><span class="light-blue-text font-head">Área do Professsor</span></center>
+            </nav>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <div class="nav-wrapper container"><!--Menu inicio-->
+
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="user-view">
+                            <div class="background black">
+                      
+                            </div>
+                            <a href="#!user"><img class="circle" src="img/user3.png"></a>
+                            <a href="#!name"><span class="white-text name">John Doe</span></a>
+                            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            <button class="btn-flat waves-effect waves-light blue" type="submit">Sair</button><!--Botão para logout-->
+                            <a href="PerfilProf.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
+                        </div>
+                    </li>
+                    <li><a href="prof.html"><i class="material-icons">home</i>Página Inicial</a></li>
+                    <li><a href="#!"><i class="material-icons">flash_on</i>Aplicação de testes online</a></li>
+                    <li><a href="#!"><i class="material-icons">group</i>Mensagens do aluno </a></li>
+                    <li><a href="#!"><i class="material-icons">chrome_reader_mode</i>Trabalhos e Exercícios</a></li>
+                    <li><a href="Entregas.html"><i class="material-icons">done_all</i>Entregas Recebidas</a></li>
+                    <li><a href="#!"><i class="material-icons">close</i>Cancelemento de Matricula</a></li>
+
+
+                </ul>
+            </div><!--Menu Fim-->
+
+            
+    </main>
+
+    <div class="container pos">
+        <div class="section">
+            </div>
+
+        </div>
+        <br><br>
+    <div>
+        <!-- Inicio do aviso -->
+
+        <div class="row pos">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Avisos</span>
+                        <p>
+                            avisos
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fim do aviso -->
+
+        <footer class="page-footer black"><!--Rodapé-->
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Impacta</h5>
+                        <p class="grey-text text-lighten-4">A Faculdade Impacta Tecnologia nasceu da percepção de um Grupo, que desde 1998 é referência em TI, Gestão e Design, para suprir a falta de mão de obra especializada do mercado de tecnologia e oferecer uma formação completa e multidisciplinar aos alunos. </p>
+
+
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Contato</h5>
+                        <ul>
+                            <li class="white-text">Comercial</br>11 3254-8300</li>
+                            <li class="white-text">Secretaria</br>11 5593-5345</li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Endereço</h5>
+                        <ul>
+                            <li class="white-text">Unidade - Barra Funda Avenida Rudge, 315 - Barra Funda São Paulo / SP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    CNPJ: 59.069.914/0001-51
+                </div>
+            </div>
+        </footer>
     </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h4 class="center light-blue-text">Área do Professsor</h4>
-      
-   </div> 
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Aplicação de testes online</h5>
-
-            <p class="light">A aplicação do teste é individual e realizada via internet, com tempo médio de 10 minutos e tempo máximo permitido de 20 minutos para conclusão do teste. </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Mensagens do aluno na área do professor</h5>
-
-            <p class="light">Acesso as mensagens recebidas pelos alunos. </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">chrome_reader_mode</i></h2>
-            <h5 class="center">Trabalhos e Exercícios</h5>
-
-            <p class="light">Disponibilização de trabalhos e exercícios na plataforma.</p>
-          </div>
-        </div>
-		
-	    <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">done_all</i></h2>
-            <h5 class="center">Entregas Recebidas</h5>
-
-            <p class="light"> Atividades, provas e trabalhos recebidos.</p>
-          </div>
-        </div>
-		
-		
-      </div>
-
     </div>
-    <br><br>
-  </div>
-  <div class= "avisos">
-	<!-- Inicio do aviso -->
-<p style="padding:100px; removido-color:#03a9f4; border:2px solid #03a9f4;"><b><span style=color: light-blue-text><Font Face="Tahoma"><Font Size="2"> Quadro de avisos</b></span><br />
-Foram feitas algumas atualizações em nosso servidor, após a migração. Para poder conectar-se, instale a nossa system 3.2, e divirta-se!</p></font>
-<!-- Fim do aviso -->
-
-<footer class="page-footer black">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Impacta</h5>
-          <p class="grey-text text-lighten-4">A Faculdade Impacta Tecnologia nasceu da percepção de um Grupo, que desde 1998 é referência em TI, Gestão e Design, para suprir a falta de mão de obra especializada do mercado de tecnologia e oferecer uma formação completa e multidisciplinar aos alunos. </p>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contato</h5>
-          <ul>
-            <li class="white-text">Comercial</br>11 3254-8300</li>
-            <li class="white-text">Secretaria</br>11 5593-5345</li> 
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Endereço</h5>
-          <ul>
-            <li class="white-text">Unidade - Barra Funda Avenida Rudge, 315 - Barra Funda São Paulo / SP</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-          CNPJ: 59.069.914/0001-51
-      </div>
-    </div>
-  </footer>
 
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>
