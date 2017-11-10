@@ -1,0 +1,33 @@
+{% extends 'base_externa.html' %}
+
+{% load static %}
+
+{% block titulo %} Login {% endblock %} 
+
+
+{% block link %}matricula{% endblock %}           {% block nome_link %} Matricula {% endblock %}
+
+{% block link_cell %}matricula{% endblock %}        {% block nome_link_cell %} Matricula {% endblock %}
+<!-- Colocar Apenas Nome do URLS -->
+
+
+{% block corpo %}
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text text-lighten-1">Login</h1>
+      <div class="row center">
+          <form method="POST" action="">
+              <label for="Nome">Nome</label><br />
+              <input name="Nome Completo" type="text" required /><br />
+              <label for="Senha">Senha</label><br />
+              <input name="Senha" type="password" required /><br />
+              <br />
+              <button class="btn-large waves-effect waves-light blue" type="submit">Login</button>
+          </form>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+{% endblock %}    
