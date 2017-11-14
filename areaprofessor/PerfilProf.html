@@ -36,9 +36,10 @@
                         </div>
                     </li>
                     <li><a href="prof.html"><i class="material-icons light-blue-text ">home</i>Página Inicial</a></li>
+                    <li><a href="#!"><i class="material-icons light-blue-text ">book</i>Boletim</a></li>
                     <li><a href="#!"><i class="material-icons light-blue-text">flash_on</i>Aplicação de testes online</a></li>
                     <li><a href="MensagemProf.html"><i class="material-icons light-blue-text">group</i>Mensagens do aluno </a></li>
-                    <li><a href="#!"><i class="material-icons light-blue-text">chrome_reader_mode</i>Trabalhos e Exercícios</a></li>
+                    <li><a href="TrabExec.html"><i class="material-icons light-blue-text">chrome_reader_mode</i>Trabalhos e Exercícios</a></li>
                     <li><a href="EntregasProf.html"><i class="material-icons light-blue-text">done_all</i>Entregas Recebidas</a></li>
                     <li><a href="#!"><i class="material-icons light-blue-text">close</i>Cancelemento de Matricula</a></li>
 
@@ -53,7 +54,19 @@
         <div class="section">
             <div class="row center">
             <div class="row">
-                <form action='' method="post" class="col s12"><!--Formulário para editar dados-->
+                <form action='' method="post" class="col s12">
+                    <!--Formulário para editar dados-->
+
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Foto de Perfil</span>
+                            <input type="file" accept=".jpg, .pdf, .png">
+                        </div>
+
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="first_name" type="text" class="validate">
@@ -82,24 +95,26 @@
                             <label for="email">Email</label>
                         </div>
                     </div>
-                    
-                    </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Nova Senha</label>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Confirmar Senha</label>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Nova Senha</label>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Confirmar Senha</label>
+                        </div>
+                    </div>
                     <br />
                     <button class="btn-large waves-effect waves-light blue" type="submit">Salvar</button>
                 </form>
+                </div>
+                
             </div>
             <br><br>
 
@@ -140,7 +155,7 @@
         </div>
     </footer>
     </div>
-    </div>
+  
 
 
 

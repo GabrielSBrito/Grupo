@@ -21,6 +21,11 @@ main {
 .pos {
     padding-left: 300px;
 }
+.postop {
+    padding-left: 300px;
+    position: relative;
+    bottom: 100px;
+}
 
 
 header, main, footer {
