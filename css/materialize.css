@@ -18,18 +18,10 @@ main {
 .font-head {
     font-size: 3.125em; /*50/16*/
 }
-.pos {
-    padding-left: 300px;
-}
 
 
 header, main, footer {
     padding-left: 300px;
-}
-
-
-{
-    display: none;
 }
 
 
@@ -2883,6 +2875,10 @@ ul.staggered-list li {
   .hide-on-large-only {
     display: none !important;
   }
+
+    .pos {
+        padding-left: 300px;
+    }
 }
 
 @media only screen and (min-width: 993px) {
