@@ -25,6 +25,8 @@ main {
 
 .font-head {
     font-size: 4.375em; /*70/16*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 }
 
 
