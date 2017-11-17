@@ -4,35 +4,6 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main {
-    flex: 1 0 auto;
-}
-      
-.font-head {
-    font-size: 3.125em; /*50/16*/
-}
-
-
-header, main, footer {
-    padding-left: 300px;
-}
-
-
-
-.azul-aqua{
-    color:aqua;
-}
-.menu-pos{
-    position:relative;
-    float: left;
-}
 .materialize-red {
   background-color: #e51c23 !important;
 }
