@@ -14,7 +14,7 @@
 <body class="grey darken-1">
     <main>
         <!--Parte padrão-->
-        <div class="row">
+        <div class="row relativo">
             <nav class="black" role="navigation">
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class=" medium material-icons">menu</i></a>
                 <center><span class="light-blue-text font-head">Notas</span></center>
@@ -55,19 +55,21 @@
 
     </main>
 
-    <div class="divider"></div>
-    <nav class="pos row black top1">
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a href="Boletim.html" class="breadcrumb">Turma</a>
-                <a href="notas.html" class="breadcrumb">Notas</a>
+    <div class="absoluto absoluto-pos">
+        <div class="divider"></div>
+        <nav class="pos row black ">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="Boletim.html" class="breadcrumb">Turma</a>
+                    <a href="notas.html" class="breadcrumb">Notas</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 
-    <div class="pos respon">
-        <div class="l6">
+    <div class=" row pos pos-cel table-pos absoluto">
+        <div class="col s12">
 
             <table class="highlight bordered responsive-table centered">
                 <thead>
@@ -86,12 +88,12 @@
                 <tbody>
                     <tr>
                         <td>Stefany</td>
-                        <td><input size="2" type="label" /></td>
-                        <td><input size="2" type="label" /></td>
-                        <td><input size="2" type="label" /></td>
-                        <td><input size="2" type="label" /></td>
-                        <td><input size="2" type="label" /></td>
-                        <td><input size="2" type="label" /></td>
+                        <td><input  size="4" type="label" maxlength="4" /></td>
+                        <td><input  size="4" type="label" maxlength="4" /></td>
+                        <td><input  size="4" type="label" maxlength="4" /></td>
+                        <td><input  size="4" type="label" maxlength="4" /></td>
+                        <td><input  size="4" type="label" maxlength="4" /></td>
+                        <td><input disabled size="4" type="label" maxlength="4" /></td>
                         <td><button class="btn-flat waves-effect waves-light blue">Salvar</button></td>
                     </tr>
                     
@@ -108,7 +110,6 @@
 
 
 
-    <div>
 
 
         <footer class="page-footer black">
@@ -142,8 +143,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-    </div>
 
 
 

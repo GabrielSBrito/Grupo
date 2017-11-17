@@ -2847,9 +2847,7 @@ ul.staggered-list li {
     display: none !important;
   }
 
-    .pos {
-        padding-left: 300px;
-    }
+    
 }
 
 @media only screen and (min-width: 993px) {

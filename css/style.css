@@ -30,9 +30,6 @@ main {
 }
 
 
-header, main, footer {
-    padding-left: 300px;
-}
 
 
 
@@ -46,23 +43,72 @@ header, main, footer {
     float: left;
 }
 
-header, main, footer {
+header, main, footer, .pos {
     padding-left: 300px;
 }
 
-@media only screen and (min-width : 992px) {
-    .top1 {
-        top: 66px;
-        position: fixed;
+.relativo{
+    position:relative;
+}
+
+.pos2{
+    padding-left:100px;
+}
+
+
+@media only screen and (min-width : 993px) {
+
+    .absoluto {
+        position: absolute;
     }
+
+    .absoluto-pos {
+        top: 64px;
+        width: 100%
+    }
+
+    .absoluto-pos2 {
+        top: 132px;
+        width: 100%
+    }
+    
+
+    .seperador-pos1 {
+        position:relative;
+        top:0px;
+    }
+
+    .table-pos{
+        top:130px;
+        width:100%;
+    }
+    
 }
 
     @media only screen and (max-width : 992px) {
-        header, main, footer {
-            padding-left: 0;
+        header, main, footer, .pos {
+            padding-left: 0px;
         }
 
         .font-head {
             font-size: 2.5em /*40/16*/;
         }
+
+
+        .absoluto {
+            position: absolute;
+        }
+
+        .absoluto-pos {
+            top: 57px;
+            width: 100%
+        }
+        .pos-cel{
+            position:relative;
+            top:40px;
+            height:auto;
+            width: auto;
+        }
+        
+       
     }
