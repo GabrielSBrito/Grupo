@@ -55,23 +55,23 @@ header, main, footer, .pos {
     position: absolute;
 }
 
+.side-nav {
+    height:100%
+}
+.side-nav li a{
+    height: auto
+}
 
 @media only screen and (min-width : 993px) {
-
-
-
-
-
-
-
-    /*
+    
+        /*
 
     .table-pos{
         top:130px;
         width:100%;
     }
     */
-}
+    }
 
     @media only screen and (max-width : 992px) {
         header, main, footer, .pos {
