@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-main {
+main{
     flex: 1 0 auto;
 }
 
@@ -51,38 +51,26 @@ header, main, footer, .pos {
     position:relative;
 }
 
-.pos2{
-    padding-left:100px;
+.absoluto {
+    position: absolute;
 }
 
 
 @media only screen and (min-width : 993px) {
 
-    .absoluto {
-        position: absolute;
-    }
 
-    .absoluto-pos {
-        top: 64px;
-        width: 100%
-    }
 
-    .absoluto-pos2 {
-        top: 132px;
-        width: 100%
-    }
-    
 
-    .seperador-pos1 {
-        position:relative;
-        top:0px;
-    }
+
+
+
+    /*
 
     .table-pos{
         top:130px;
         width:100%;
     }
-    
+    */
 }
 
     @media only screen and (max-width : 992px) {
@@ -95,14 +83,9 @@ header, main, footer, .pos {
         }
 
 
-        .absoluto {
-            position: absolute;
-        }
+        
 
-        .absoluto-pos {
-            top: 57px;
-            width: 100%
-        }
+       
         .pos-cel{
             position:relative;
             top:40px;
