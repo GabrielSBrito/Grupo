@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--Página para editr perfil do professor-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Perfil</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/materialize.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/style.css" />
+</head>
+<body class="grey darken-1">
+    <main>
+        <!--Parte padrão-->
+        <div class="row">
+            <nav class="black" role="navigation">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class=" medium material-icons">menu</i></a>
+                <center><span class="light-blue-text font-head">Perfil</span></center>
+            </nav>
+        </div>
+
+            <div class="nav-wrapper container"><!--Menu inicio-->
+
+                <ul id="slide-out" class="side-nav fixed grey darken-1">
+                    <li>
+                        <div class="user-view">
+                            <div class="background black">
+
+                            </div>
+                            <a href="#!user"><img class="circle" src="../img/user3.png"></a>
+                            <a href="#!name"><span class="white-text name">John Doe</span></a>
+                            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            <button class="btn-flat waves-effect waves-light blue" type="reset">Sair</button><!--Botão para logout-->
+                            <a href="PerfilProf.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
+                        </div>
+                    </li>
+                    <li><a href="prof.html"><i class="material-icons light-blue-text ">home</i>Página Inicial</a></li>
+                    <li><a href="Aula.html"><i class="material-icons light-blue-text ">class</i>Aula</a></li>
+                    <li><a href="Boletim.html"><i class="material-icons light-blue-text ">collections_bookmark</i>Boletim</a></li>
+                    <li><a href="Turma_Falta.html"><i class="material-icons light-blue-text ">error</i>Faltas</a></li>
+                    <li><a href="#!"><i class="material-icons light-blue-text">flash_on</i>Aplicação de testes</a></li>
+                    <li><a href="MensagemProf.html"><i class="material-icons light-blue-text">group</i>Mensagens do aluno</a></li>
+                    <li><a href="TrabExec.html"><i class="material-icons light-blue-text">chrome_reader_mode</i>Trabalhos e Exercícios</a></li>
+                    <li><a href="EntregasProf.html"><i class="material-icons light-blue-text">done_all</i>Entregas Recebidas</a></li>
+                    <li><a href="#!"><i class="material-icons light-blue-text">close</i>Cancelemento de Matricula</a></li>
+
+                </ul>
+            </div><!--Menu Fim-->
+
+           
+    </main>
+
+    <div class="container pos respon">
+        <div class="section">
+            <div class="row center">
+            <div class="col s12">
+                <form action='' method="post" >
+                    <!--Formulário para editar dados-->
+                        <div class="col s12 m12 l12">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Foto de Perfil</span>
+                                </div>
+
+                                    <input type="file" accept=".jpg, .pdf, .png">
+                                </div>
+
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="login" type="text" class="validate">
+                            <label for="login">Login</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="end" type="text" class="validate">
+                            <label for="end">Endereço</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="num" type="text" class="validate">
+                            <label for="num">Número</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Nova Senha</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Confirmar Senha</label>
+                        </div>
+                    </div>
+                    <br />
+                    <button class="btn-large waves-effect waves-light blue" type="submit">Salvar</button>
+                </form>
+                </div>
+                
+            </div>
+            <br><br>
+
+        </div>
+    </div>
+    <br><br>
+
+
+
+    <footer class="page-footer black"><!--Rodapé-->
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Impacta</h5>
+                    <p class="grey-text text-lighten-4">A Faculdade Impacta Tecnologia nasceu da percepção de um Grupo, que desde 1998 é referência em TI, Gestão e Design, para suprir a falta de mão de obra especializada do mercado de tecnologia e oferecer uma formação completa e multidisciplinar aos alunos. </p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul>
+                        <li class="white-text">Comercial</br>11 3254-8300</li>
+                        <li class="white-text">Secretaria</br>11 5593-5345</li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Endereço</h5>
+                    <ul>
+                        <li class="white-text">Unidade - Barra Funda Avenida Rudge, 315 - Barra Funda São Paulo / SP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                CNPJ: 59.069.914/0001-51
+            </div>
+        </div>
+    </footer>
+    </div>
+  
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
+
+</body>
+</html>
