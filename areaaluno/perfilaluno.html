@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<!--Página para editr perfil do professor-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
@@ -7,18 +8,18 @@
 
     <!-- CSS  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link type="text/css" rel="stylesheet" media="screen,projection" href="css/materialize.css" />
-    <link type="text/css" rel="stylesheet" media="screen,projection" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/materialize.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/style.css" />
 </head>
 <body class="grey darken-1">
     <main>
         <!--Parte padrão-->
-        <div>
+        <div class="row">
             <nav class="black" role="navigation">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class=" medium material-icons">menu</i></a>
                 <center><span class="light-blue-text font-head">Perfil</span></center>
             </nav>
         </div>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <div class="nav-wrapper container"><!--Menu inicio-->
 
@@ -28,22 +29,19 @@
                             <div class="background black">
 
                             </div>
-                            <a href="#!user"><img class="circle" src="img/user3.png"></a>
+                            <a href="#!user"><img class="circle" src="../img/user3.png"></a>
                             <a href="#!name"><span class="white-text name">John Doe</span></a>
                             <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
                             <button class="btn-flat waves-effect waves-light blue" type="reset">Sair</button><!--Botão para logout-->
-                            <a href="PerfilProf.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
+                            <a href="perfilaluno.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
                         </div>
-                    </li>
+                     </li>
                 <li><a href="aluno.html"><i class="material-icons light-blue-text ">home</i>Página Inicial</a></li>
-                <li><a href="foto.html"><i class="material-icons light-blue-text">face</i>Idetificação do Aluno</a></li>
                 <li><a href="entregas.html"><i class="material-icons light-blue-text">priority_high</i>Entregas Pendentes</a></li>
                 <li><a href="avisos.html"><i class="material-icons light-blue-text">message</i>Avisos para o Professor</a></li>
                 <li><a href="disponivel.html"><i class="material-icons light-blue-text">assignment_turned_in</i>Disponibilidades</a></li>
                 <li><a href="recepção.html"><i class="material-icons light-blue-text">assignment</i>Recepção</a></li>
                 <li><a href="boletim.html"><i class="material-icons light-blue-text">chrome_reader_mode</i>Boletim</a></li>
-
-
                 </ul>
             </div><!--Menu Fim-->
 
@@ -53,16 +51,27 @@
     <div class="container pos respon">
         <div class="section">
             <div class="row center">
-            <div class="row">
-                <form class="col s12"><!--Formulário para editar dados-->
+            <div class="col s12">
+                <form action='' method="post" >
+                    <!--Formulário para editar dados-->
+                        <div class="col s12 m12 l12">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Foto de Perfil</span>
+                                </div>
+
+                                    <input type="file" accept=".jpg, .pdf, .png">
+                                </div>
+
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                </div>
+                            </div>
+                    </div>
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">Primeiro Nome</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Sobrenome</label>
+                        <div class="input-field col s12">
+                            <input id="login" type="text" class="validate">
+                            <label for="login">Login</label>
                         </div>
                     </div>
                     <div class="row">
@@ -83,24 +92,26 @@
                             <label for="email">Email</label>
                         </div>
                     </div>
-                    
-                    </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Nova Senha</label>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Confirmar Senha</label>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Nova Senha</label>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Confirmar Senha</label>
+                        </div>
+                    </div>
                     <br />
                     <button class="btn-large waves-effect waves-light blue" type="submit">Salvar</button>
                 </form>
+                </div>
+                
             </div>
             <br><br>
 
@@ -141,14 +152,14 @@
         </div>
     </footer>
     </div>
-    </div>
+  
 
 
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
 
 </body>
 </html>

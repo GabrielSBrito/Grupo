@@ -48,7 +48,13 @@
                       </div>
                       <div class="row">
                           <div class="input-field col s12">
-                              <input id="num" type="text" class="validate">
+                              <input id="cep" type="text" class="validate"  onkeyup="somenteNumeros(this);" maxlength="8">
+                              <label for="cep">CEP</label>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="input-field col s12">
+                              <input id="num" type="text" class="validate" onkeyup="somenteNumeros(this);" >
                               <label for="num">Número</label>
                           </div>
                       </div>

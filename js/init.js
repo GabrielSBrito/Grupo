@@ -56,5 +56,17 @@ $('.button-collapse').sideNav({
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true, // Choose whether you can drag to open on touch screens,
     
+    
     }
-  );
+);
+
+
+var inputvalue1 = parseInt(document.getElementById('RA').value);
+function somenteNumeros(num) {
+        var er = /[^0-9.]/;
+        er.lastIndex = 0;
+        var campo = num;
+        if (er.test(campo.value)) {
+            campo.value = "";
+        }
+    }
