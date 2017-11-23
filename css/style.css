@@ -12,7 +12,11 @@
     font-style: normal;
     font-weight: 400;
     /*src: url(../icon) format('svg');*/
-    src:local() format('svg')
+    src:url(../icon/) format('svg')
+}
+svg{
+  width: 24px;
+  height: 24px;
 }
 
 .material-icons {
