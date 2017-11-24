@@ -1,4 +1,4 @@
-/* Criação da database projetob2*/
+/* CriaÃ§Ã£o da database projetob2*/
 create database projetob2
 
 /* Usando a database projetob2*/
@@ -21,7 +21,7 @@ drop table Aluno
 
 */
 
-/* Criação da tabela Curso*/
+/* CriaÃ§Ã£o da tabela Curso*/
 create table Curso(
 	sigla varchar(5) not null,
 	nome varchar(50) not null,
@@ -29,7 +29,7 @@ create table Curso(
 	constraint uc_nome unique (nome)
 )
 
-/* Criação da tabela Grade Curricular*/
+/* CriaÃ§Ã£o da tabela Grade Curricular*/
 create table GradeCurricular(
 	sigla_curso varchar(5) not null,
 	ano smallint not null,
@@ -39,7 +39,7 @@ create table GradeCurricular(
 	references Curso(sigla)
 )
 
-/* Criação da tabela Período*/
+/* CriaÃ§Ã£o da tabela PerÃ­odo*/
 create table Periodo(
 	sigla_curso varchar(5) not null,
 	ano_grade smallint not null,
@@ -50,7 +50,7 @@ create table Periodo(
 	references GradeCurricular(sigla_curso, ano, semestre)
 )
 
-/* Criação da tabela Disciplina*/
+/* CriaÃ§Ã£o da tabela Disciplina*/
 create table Disciplina(
 	nome varchar(240) not null,
 	carga_horaria tinyint not null,
@@ -65,7 +65,7 @@ create table Disciplina(
 	constraint pk_disciplina primary key (nome)
 )
 
-/* Criação da tabela PeriodoDisciplina*/
+/* CriaÃ§Ã£o da tabela PeriodoDisciplina*/
 create table PeriodoDisciplina(
 	sigla_curso varchar(5) not null,
 	ano_grade smallint not null,
@@ -79,9 +79,9 @@ create table PeriodoDisciplina(
 	references Disciplina(nome)
 )
 
-/* Criação da tabela Aluno*/
+/* CriaÃ§Ã£o da tabela Aluno*/
 create table Aluno(
-	ra int not null,
+	ra int identity(1000,1) not null,
 	nome varchar(120) not null,
 	email varchar(80),
 	celular char(11),
@@ -91,7 +91,7 @@ create table Aluno(
 	references Curso(sigla)
 )
 
-/* Criação da tabela DisciplinaOfertada*/
+/* CriaÃ§Ã£o da tabela DisciplinaOfertada*/
 create table DisciplinaOfertada(
 	nome_disciplina varchar(240) not null,
 	ano smallint not null,
@@ -101,9 +101,9 @@ create table DisciplinaOfertada(
 	references Disciplina(nome)
 )
 
-/* Criação da tabela Professor*/
+/* CriaÃ§Ã£o da tabela Professor*/
 create table Professor(
-	ra int not null,
+	ra int identity(1000,1) not null,
 	apelido varchar(30),
 	nome varchar(120) not null,
 	email varchar(80),
@@ -112,14 +112,14 @@ create table Professor(
 	constraint uc_apelido unique (apelido)
 )
 
-/* Criação da tabela Turma*/
+/* CriaÃ§Ã£o da tabela Turma*/
 create table Turma(
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
 	semestre_ofertado char(1) not null,
 	id char(1) not null,
 	turno varchar(5) not null,
-	ra_professor int not null,
+	ra_professor int identity(1000,1) not null,
 	constraint pk_Turma primary key (nome_disciplina, ano_ofertado, semestre_ofertado, id),
 	constraint fk_Turma_DisciplinaOfertada foreign key (nome_disciplina, ano_ofertado, semestre_ofertado)
 	references DisciplinaOfertada(nome_disciplina, ano, semestre),
@@ -127,9 +127,9 @@ create table Turma(
 	references Professor(ra)
 )
 
-/* Criação da tabela Matrícula*/
+/* CriaÃ§Ã£o da tabela MatrÃ­cula*/
 create table Matricula(
-	ra_aluno int not null,
+	ra_aluno int identity(1000,1) not null,
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
 	semestre_ofertado char(1) not null,
@@ -141,7 +141,7 @@ create table Matricula(
 	references Turma(nome_disciplina, ano_ofertado, semestre_ofertado, id)
 )
 
-/* Criação da tabela CursoTurma*/
+/* CriaÃ§Ã£o da tabela CursoTurma*/
 create table CursoTurma(
 	sigla_curso varchar(5) not null,
 	nome_disciplina varchar(240) not null,
@@ -155,7 +155,7 @@ create table CursoTurma(
 	references Turma(nome_disciplina, ano_ofertado, semestre_ofertado, id)
 )
 
-/* Criação da tabela Questao*/
+/* CriaÃ§Ã£o da tabela Questao*/
 create table Questao(
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
@@ -170,14 +170,14 @@ create table Questao(
 	references Turma(nome_disciplina, ano_ofertado, semestre_ofertado, id)
 )
 
-/* Criação da tabela Resposta*/
+/* CriaÃ§Ã£o da tabela Resposta*/
 create table Resposta(
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
 	semestre_ofertado char(1) not null,
 	id_turma char(1) not null,
 	numero_questao int,
-	ra_aluno int not null,
+	ra_aluno int identity(1000,1) not null,
 	data_avaliacao date,
 	nota decimal(4,2),
 	avaliacao text,
@@ -190,21 +190,21 @@ create table Resposta(
 	references Aluno(ra)
 )
 
-/* Criação da tabela ArquivosResposta*/
+/* CriaÃ§Ã£o da tabela ArquivosResposta*/
 create table ArquivosResposta(
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
 	semestre_ofertado char(1) not null,
 	id_turma char(1) not null,
 	numero_questao int,
-	ra_aluno int not null,
+	ra_aluno int identity(1000,1) not null,
 	arquivo varchar(500),
 	constraint pk_ArquivosResposta primary key (nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo),
 	constraint fk_ArquivosResposta_Resposta foreign key (nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno)
 	references Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno)
 )
 
-/* Criação da tabela ArquivosQuestao*/
+/* CriaÃ§Ã£o da tabela ArquivosQuestao*/
 create table ArquivosQuestao(
 	nome_disciplina varchar(240) not null,
 	ano_ofertado smallint not null,
@@ -216,6 +216,3 @@ create table ArquivosQuestao(
 	constraint fk_ArquivosQuestao_Questao foreign key (nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao)
 	references Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero)
 )
-
-
-
