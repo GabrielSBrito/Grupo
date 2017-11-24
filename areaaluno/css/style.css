@@ -5,6 +5,11 @@
  *
  * Made By MaterializeCSS.com
  */
+#redondo{
+    width:150px;
+    height: 50px;
+    border-radius: 100px;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -18,3 +23,122 @@
 #meio{
 	text-align:center;
 }
+.meio2{
+    text-align:center;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    /*src: url(../icon) format('svg');*/
+    src:local() format('svg')
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.font-head {
+    font-size: 4.375em; /*70/16*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.azul-aqua {
+    color: aqua;
+}
+
+.menu-pos {
+    position: relative;
+    float: left;
+}
+
+header, main, footer, .pos {
+    padding-left: 300px;
+}
+
+.relativo{
+    position:relative;
+}
+
+.absoluto {
+    position: absolute;
+}
+
+
+.side-nav {
+    height: 100%;
+}
+
+.side-nav li a{
+    height: auto;
+        
+}
+
+
+   
+@media only screen and (min-width : 993px) {
+    /*
+    .table-pos{
+        top:130px;
+        width:100%;
+    }
+    */
+}
+
+    @media only screen and (max-width : 992px) {
+        header, main, footer, .pos {
+            padding-left: 0px;
+        }
+
+        .font-head {
+            font-size: 2.5em /*40/16*/;
+        }
+
+
+        
+
+       
+        .pos-cel{
+            position:relative;
+            top:40px;
+            height:auto;
+            width: auto;
+        }
+        
+       
+    }
