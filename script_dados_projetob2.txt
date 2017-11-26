@@ -1,0 +1,289 @@
+/* Dados para a tabela Curso */
+
+insert Curso(sigla, nome)
+values('ADS', 'Análise e Desenvolvimento de Sistemas')
+
+insert Curso(sigla, nome)
+values('ADM', 'Administração')
+
+insert Curso(sigla, nome)
+values('SI', 'Sistema da Informação')
+
+insert Curso(sigla, nome)
+values('JD', 'Jogos Digitais')
+
+insert Curso(sigla, nome)
+values('RC', 'Redes de Computadores')
+
+select * from Curso
+
+/* Dados para a tabela Grade Curricular */
+
+insert GradeCurricular(sigla_curso, ano, semestre)
+values('ADS', 2010, 1)
+
+insert GradeCurricular(sigla_curso, ano, semestre)
+values('ADM', 2014, 2)
+
+insert GradeCurricular(sigla_curso, ano, semestre)
+values('SI', 2013, 1)
+
+insert GradeCurricular(sigla_curso, ano, semestre)
+values('JD', 2014, 1)
+
+insert GradeCurricular(sigla_curso, ano, semestre)
+values('RC', 2009, 1)
+
+select * from GradeCurricular
+
+/* Dados para a tabela Periodo */
+
+insert Periodo(sigla_curso, ano_grade, semestre_grade, numero)
+values('ADS', 2010, 1, 4)
+
+insert Periodo(sigla_curso, ano_grade, semestre_grade, numero)
+values('ADM', 2014, 2, 4)
+
+insert Periodo(sigla_curso, ano_grade, semestre_grade, numero)
+values('SI', 2013, 1, 8)
+
+insert Periodo(sigla_curso, ano_grade, semestre_grade, numero)
+values('JD', 2014, 1, 4)
+
+insert Periodo(sigla_curso, ano_grade, semestre_grade, numero)
+values('RC', 2009, 1, 4)
+
+select * from Periodo
+
+/* Dados para a tabela Disciplina */
+
+insert Disciplina(nome, carga_horaria, teoria, pratica, ementa, competencias, habilidades, conteudo, bibliografia_basica, bibliografia_complementar)
+values('Linguagem de Programação', 80, 2, 2, 'Conceitos básicos para a programação com Python', 'Aplicar a linguagem de programação aprendida no mercado de trabalho', 'Capacidade de expressar ideiais', 'Python', 'Seresta, R. W; Conceitos de Linguagens de Programação; 5ª edição, Editora Bookman, 2003', 'RUMBAUGH, J., Modelagem e Projetos Baseados em Objetos, Campus, 1994')
+
+insert Disciplina(nome, carga_horaria, teoria, pratica, ementa, competencias, habilidades, conteudo, bibliografia_basica, bibliografia_complementar)
+values('Matemática aplicada', 80, 4, 0, 'Matemática aplicada para programação', 'Utilização da matemática aplicada para a programação', 'Capacidade para utilizar a matemática no mercado de trabalho', 'Matemática', 'Edward R. Scheinerman: Matemática Discreta Uma introdução. Thomson Pioneira, 2003.', 'Roman, Steven An Introduction to Discrete Mathematics.HBJ, 1989')
+
+insert Disciplina(nome, carga_horaria, teoria, pratica, ementa, competencias, habilidades, conteudo, bibliografia_basica, bibliografia_complementar)
+values('Comunicação e Expressão', 40, 4, 0, 'Conceitos para a utilização da comunicação e expressão no mercado de trabalho', 'Aplicar a comunicação e expressão no mercado de trabalho', 'Capacidade para dirigir textos formais', 'Comunicação e Expressão', 'KOCH, Ingedore Villaça & ELIAS, Vanda Maria. (2006). Ler e compreender: os sentidos do texto. São Paulo: Contexto', 'ANDRADE, Maria Margarida de & HENRIQUES, Antonio. (2007). Língua Portuguesa: noções básicas para cursos superiores. 8. ed. São Paulo: Atlas')
+
+insert Disciplina(nome, carga_horaria, teoria, pratica, ementa, competencias, habilidades, conteudo, bibliografia_basica, bibliografia_complementar)
+values('Empreendedorismo', 80, 2, 2, 'Compreender o empreendedorismo para o seu negócio', 'Aplicar o empreendedorismo no mercado de trabalho', 'Capacidade para abrir e/ou gerenciar um negócio', 'Prática empreendedorismo', 'DOLABELA, Fernando; Segredo de Luísa, O. São Paulo: Cultura Editores Associados, 1999.', 'AMBRÓSIO, Vicente; Plano de marketing passo a passo:. Rio de Janeiro: Reichmann & Affonso, 1999.')
+
+insert Disciplina(nome, carga_horaria, teoria, pratica, ementa, competencias, habilidades, conteudo, bibliografia_basica, bibliografia_complementar)
+values('Gestão de Custos', 40, 2, 2, 'Compreender o gerenciamento de custos para a empresa', 'Aplicar a gestão para o mercado de trabalho', 'Capacidade para gerenciar os custos da empresa', 'Teorias e práticas no gerenciamento de custos', 'HELDMAN, Kim. Gerência de projetos: fundamentos, Rio de Janeiro: Elsevier, 2005', 'CARVALHO, Marly Monteiro de. Gerenciamento de projetos na prática: casos brasileiros. São Paulo: Atlas, 2006')
+
+select * from Disciplina
+
+/* Dados para a tabela Periodo Disciplina */
+
+insert PeriodoDisciplina(sigla_curso, ano_grade, semestre_grade, numero_periodo, nome_disciplina)
+values('ADS', 2010, 1, 4, 'Linguagem de Programação')
+
+insert PeriodoDisciplina(sigla_curso, ano_grade, semestre_grade, numero_periodo, nome_disciplina)
+values('ADM', 2014, 2, 4, 'Gestão de Custos')
+
+insert PeriodoDisciplina(sigla_curso, ano_grade, semestre_grade, numero_periodo, nome_disciplina)
+values('SI', 2013, 1, 8, 'Comunicação e Expressão')
+
+insert PeriodoDisciplina(sigla_curso, ano_grade, semestre_grade, numero_periodo, nome_disciplina)
+values('JD', 2014, 1, 4, 'Empreendedorismo')
+
+insert PeriodoDisciplina(sigla_curso, ano_grade, semestre_grade, numero_periodo, nome_disciplina)
+values('RC', 2009, 1, 4, 'Matemática aplicada')
+
+select * from PeriodoDisciplina
+
+/* Dados para a tabela Aluno */
+
+insert Aluno(nome, email, celular, sigla_curso)
+values('Marcos de Souza', 'Marcos.Souza@hotmail.com', 11965471259, 'ADS')
+
+insert Aluno(nome, email, celular, sigla_curso)
+values('Rafaela de Morais', 'Rafaela.Morais@outlook.com', 1165237458, 'ADM')
+
+insert Aluno(nome, email, celular, sigla_curso)
+values('João da Silva', 'Joao.Silva@yahoo.com', 1156248794, 'SI')
+
+insert Aluno(nome, email, celular, sigla_curso)
+values('Augusto Medeiros', 'Augusto.Medeiros@uol.com', 1195871243, 'JD')
+
+insert Aluno(nome, email, celular, sigla_curso)
+values('Kelvin da Silva', 'Kelvin.Silva@uol.com', 1154782365, 'RC')
+
+select * from Aluno
+
+/* Dados para a tabela DisciplinaOfertada */
+
+insert DisciplinaOfertada(nome_disciplina, ano, semestre)
+values('Linguagem de Programação', 2010, 1)
+
+insert DisciplinaOfertada(nome_disciplina, ano, semestre)
+values('Matemática aplicada', 2014, 2)
+
+insert DisciplinaOfertada(nome_disciplina, ano, semestre)
+values('Comunicação e Expressão', 2013, 1)
+
+insert DisciplinaOfertada(nome_disciplina, ano, semestre)
+values('Empreendedorismo', 2014, 1)
+
+insert DisciplinaOfertada(nome_disciplina, ano, semestre)
+values('Gestão de Custos', 2009, 1)
+
+select * from DisciplinaOfertada
+
+/* Dados para a tabela Professor */
+
+insert Professor(apelido, nome, email, celular)
+values('Leonardo.Oliveira', 'Leonardo de Oliveira', 'Leonardo.Oliveira@uol.com', 11951423687)
+
+insert Professor(apelido, nome, email, celular)
+values('Maria.Andrade', 'Maria de Andrade', 'Maria.Andrade@uol.com', 1156327458)
+
+insert Professor(apelido, nome, email, celular)
+values('Eduardo.Costa', 'Eduardo Costa', 'Eduardo.Costa@hotmail.com', 11952147458)
+
+insert Professor(apelido, nome, email, celular)
+values('Theo.Lago', 'Theo Lago', 'Theo.Lago@outlook.com', 11952001420)
+
+insert Professor(apelido, nome, email, celular)
+values('José Nascimento', 'José Nascimento', 'Jose.Nascimento@yahoo.com', 11952410032)
+
+select * from Professor
+
+/* Dados para a tabela Turma */
+
+insert Turma(nome_disciplina, ano_ofertado, semestre_ofertado, turno, ra_professor)
+values('Linguagem de Programação', 2010, 1, 'NOTU', 2000)
+
+insert Turma(nome_disciplina, ano_ofertado, semestre_ofertado, turno, ra_professor)
+values('Matemática aplicada', 2014, 2, 'DIUR', 2001)
+
+insert Turma(nome_disciplina, ano_ofertado, semestre_ofertado, turno, ra_professor)
+values('Comunicação e Expressão', 2013, 1, 'DIUR', 2002)
+
+insert Turma(nome_disciplina, ano_ofertado, semestre_ofertado, turno, ra_professor)
+values('Empreendedorismo', 2014, 1, 'NOTU', 2003)
+
+insert Turma(nome_disciplina, ano_ofertado, semestre_ofertado, turno, ra_professor)
+values('Gestão de Custos', 2009, 1, 'DIUR', 2004)
+
+select * from Turma
+
+/* Dados para a tabela Matricula */
+
+insert Matricula(ra_aluno, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values(1000, 'Linguagem de Programação', 2010, 1, 1)
+
+insert Matricula(ra_aluno, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values(1001, 'Matemática aplicada', 2014, 2, 2)
+
+insert Matricula(ra_aluno, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values(1002, 'Comunicação e Expressão', 2013, 1, 3)
+
+insert Matricula(ra_aluno, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values(1003, 'Empreendedorismo', 2014, 1, 4)
+
+insert Matricula(ra_aluno, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values(1004, 'Gestão de Custos', 2009, 1, 5)
+
+select * from Matricula
+
+/* Dados para a tabela CursoTurma */
+
+insert CursoTurma(sigla_curso, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values('ADS', 'Linguagem de Programação', 2010, 1, 1)
+
+insert CursoTurma(sigla_curso, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values('ADM', 'Matemática aplicada', 2014, 2, 2)
+
+insert CursoTurma(sigla_curso, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values('SI', 'Comunicação e Expressão', 2013, 1, 3)
+
+insert CursoTurma(sigla_curso, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values('JD', 'Empreendedorismo', 2014, 1, 4)
+
+insert CursoTurma(sigla_curso, nome_disciplina, ano_ofertado, semestre_ofertado, id_turma)
+values('RC', 'Gestão de Custos', 2009, 1, 5)
+
+select * from CursoTurma
+
+/* Dados para a tabela Questao */
+
+insert Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, data_limite_entrega, descricao, data)
+values('Linguagem de Programação', 2010, 1, 1, '2018-01-15', 'Assinale a alternativa correta', '2018-01-05')
+
+insert Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, data_limite_entrega, descricao, data)
+values('Matemática aplicada', 2014, 2, 2, '2018-02-20', 'Assinale a alternativa correta', '2018-02-10')
+
+insert Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, data_limite_entrega, descricao, data)
+values('Comunicação e Expressão', 2013, 1, 3, '2018-03-25', 'Assinale a alternativa incorreta', '2018-03-01')
+
+insert Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, data_limite_entrega, descricao, data)
+values('Empreendedorismo', 2014, 1, 4, '2018-02-10', 'Assinale a alternativa correta', '2018-02-01')
+
+insert Questao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, data_limite_entrega, descricao, data)
+values('Gestão de Custos', 2009, 1, 5, '2018-03-30', 'Assinale a alternativa incorreta', '2018-03-01')
+
+select * from Questao
+
+/* Dados para a tabela Resposta */
+
+insert Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, data_avaliacao, nota, avaliacao, descricao, data_de_envio)
+values('Linguagem de Programação', 2010, 1, 1, 1, 1000, '2018-01-15', 8, 'Bom', 'Estude mais as funções da programação', '2018-01-20')
+
+insert Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, data_avaliacao, nota, avaliacao, descricao, data_de_envio)
+values('Matemática aplicada', 2014, 2, 2, 2, 1001, '2018-02-20', 9, 'Ótimo', 'Continue assim', '2018-02-25')
+
+insert Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, data_avaliacao, nota, avaliacao, descricao, data_de_envio)
+values('Comunicação e Expressão', 2013, 1, 3, 3, 1002, '2018-03-25', 10, 'Parabéns', 'Continue assim', '2018-03-30')
+
+insert Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, data_avaliacao, nota, avaliacao, descricao, data_de_envio)
+values('Empreendedorismo', 2014, 1, 4, 4, 1003, '2018-02-10', 5, 'Estude', 'Dedique-se', '2018-02-15')
+
+insert Resposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, data_avaliacao, nota, avaliacao, descricao, data_de_envio)
+values('Gestão de Custos', 2009, 1, 5, 5, 1004, '2018-03-30', 7, 'Bom', 'Preste atenção nas perguntas', '2018-04-05')
+
+select * from Resposta
+
+/* Dados para a tabela ArquivosResposta */
+
+insert ArquivosResposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo)
+values('Linguagem de Programação', 2010, 1, 1, 1, 1000, 'C:\Arquivo')
+
+insert ArquivosResposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo)
+values('Matemática aplicada', 2014, 2, 2, 2, 1001, 'C:\Arquivo')
+
+insert ArquivosResposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo)
+values('Comunicação e Expressão', 2013, 1, 3, 3, 1002, 'C:\Arquivo')
+
+insert ArquivosResposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo)
+values('Empreendedorismo', 2014, 1, 4, 4, 1003, 'C:\Arquivo')
+
+insert ArquivosResposta(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, ra_aluno, arquivo)
+values('Gestão de Custos', 2009, 1, 5, 5, 1004, 'C:\Arquivo')
+
+select * from ArquivosResposta
+
+/* Dados para a tabela ArquivosQuestao */
+
+insert ArquivosQuestao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, arquivo)
+values('Linguagem de Programação', 2010, 1, 1, 1, 'C:\ArquivoResposta')
+
+insert ArquivosQuestao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, arquivo)
+values('Matemática aplicada', 2014, 2, 2, 2, 'C:\ArquivoResposta')
+
+insert ArquivosQuestao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, arquivo)
+values('Comunicação e Expressão', 2013, 1, 3, 3, 'C:\ArquivoResposta')
+
+insert ArquivosQuestao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, arquivo)
+values('Empreendedorismo', 2014, 1, 4, 4, 'C:\ArquivoResposta')
+
+insert ArquivosQuestao(nome_disciplina, ano_ofertado, semestre_ofertado, id_turma, numero_questao, arquivo)
+values('Gestão de Custos', 2009, 1, 5, 5, 'C:\ArquivoResposta')
+
+select * from ArquivosQuestao
+
+
+
+
+
