@@ -3,9 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Boletim</title>
+    <title>Disponibilidade</title>
 
     <!-- CSS  -->
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link type="text/css" rel="stylesheet" media="screen,projection" href="css/materialize.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="css/style.css" />
@@ -15,7 +19,7 @@
         <!--Parte padrão-->
         <div>
             <nav class="black" role="navigation">
-                <center><span class="light-blue-text font-head">Boletim</span></center>
+                <center><span class="light-blue-text font-head">Exercícios</span></center>
             </nav>
        </div>
 
@@ -24,17 +28,17 @@
         <div class="nav-wrapper container">
             <!--Menu inicio-->
 
-            <ul id="slide-out" class="side-nav fixed grey darken-1">
+            <ul id="slide-out" class="side-nav fixed grey darken-1 z-depth-5">
                 <li>
                     <div class="user-view">
                         <div class="background black">
 
                         </div>
                         <a href="#!user"><img class="circle" src="img/user3.png"></a>
-                        <a href="#!name"><span class="white-text name">Sieghart</span></a>
-                        <a href="#!email"><span class="white-text email">Sieghart@gmail.com</span></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
                         <button class="btn-flat waves-effect waves-light blue" type="reset">Sair</button><!--Botão para logout-->
-                        <a href="perfilaluno.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
+                        <a href="foto.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
                     </div>
                 </li>
                 <li><a href="aluno.html"><i class="material-icons light-blue-text ">home</i>Página Inicial</a></li>
@@ -44,56 +48,55 @@
                 <li><a href="disponivel.html"><i class="material-icons light-blue-text">assignment_turned_in</i>Disponibilidades</a></li>
                 <li><a href="recepcao.html"><i class="material-icons light-blue-text">assignment</i>Recepção</a></li>
                 <li><a href="boletim.html"><i class="material-icons light-blue-text">chrome_reader_mode</i>Boletim</a></li>
-
             </ul>
         </div><!--Menu Fim-->
 
            
     </main>
 
-
-
     <div class="pos respon">
     <table class="highlight bordered responsive-table centered" >
-        <thead>
-            <tr>
-                <th>Semestres</th>
-                <th>Data</th>
-                <th>Boletins</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>1ºSemestres</td>
-                <td>21/03/2017</td>
-                <td>1ºSmestre<br/>Formato Word</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button><br /><br />Formato PDF</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></br></br><a href="visualizacao.html"><button id="redondo" class="btn-flat waves-effect waves-light blue">Visualizar</button></td></td>
-                
-            </tr>
-            <tr>
-                <td>2ºSemestres</td>
-                <td>11/03/2017</td>
-                <td>2ºBimestre<br/>Formato Word</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button><br /><br />Formato PDF</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></br></br><a href="visualizacao.html"><button id="redondo" class="btn-flat waves-effect waves-light blue">Visualizar</button></td></
-            </tr>
-            <tr>
-                <td>3ºSemestres</td>
-                <td>01/03/2017</td>
-                <td>3ºSemestres<br/>Formato Word</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button><br /><br />Formato PDF</br><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></br></br><a href="visualizacao.html"><button id="redondo" class="btn-flat waves-effect waves-light blue">Visualizar</button></br></br></td>
-            </tr>
-
-        </tbody>
-    </table>
-
-        <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active blue"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
-
+    <div id="divConteudo">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Professor</th>
+                    <th>Disciplina</th>
+                    <th>Arquivo</th>
+                </tr>
+                <tr>
+                    <th><input type="text" id="txtColuna2"/></th>
+                    <th><input type="text" id="txtColuna3"/></th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Takai</td>
+                    <td>Python</td>
+                    <td>teste.pdf <br /><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></td>
+                </tr>
+                <tr>
+                    <td>Sand</td>
+                    <td>SQL</td>
+                    <td>teste.pdf <br /><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></td>
+                </tr>            
+                <tr>
+                    <td>Sand</td>
+                    <td>SQL2</td>
+                    <td>teste.pdf <br /><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></td>
+                </tr>
+                <tr>
+                    <td>Takai</td>
+                    <td>Engenharia</td>
+                    <td>teste.pdf <br /><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></td>
+                </tr>
+                <tr>
+                    <td>Vanderson</td>
+                    <td>HTML5</td>
+                    <td>teste.pdf <br /><button id="redondo" class="btn-flat waves-effect waves-light blue">Baixar</button></td>
+                </tr>            
+            </tbody>
+        </table>
     </div>
 
 

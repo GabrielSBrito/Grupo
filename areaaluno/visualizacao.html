@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Página para disponibilizar as notas para os alunos-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Notas</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/materialize.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/style.css" />
+</head>
+<body class="grey darken-1">
+    <main>
+        <!--Parte padrão-->
+        <div class="row relativo">
+            <nav class="black" role="navigation">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class=" medium material-icons">menu</i></a>
+                <center><span class="light-blue-text font-head">Notas</span></center>
+            </nav>
+        </div>
+
+
+        <div class="nav-wrapper container">
+            <!--Menu inicio-->
+
+            <ul id="slide-out" class="side-nav fixed grey darken-1 z-depth-5">
+                <li>
+                    <div class="user-view">
+                        <div class="background black">
+
+                        </div>
+                        <a href="#!user"><img class="circle" src="../img/user3.png"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        <button class="btn-flat waves-effect waves-light blue" type="reset">Sair</button><!--Botão para logout-->
+                        <a href="PerfilProf.html"><button class="btn-flat waves-effect waves-light blue"> Editar</button></a><!--Botão para editar perfil-->
+                    </div>
+                </li>
+                <li><a href="aluno.html"><i class="material-icons light-blue-text ">home</i>Página Inicial</a></li>
+                <li><a href="foto.html"><i class="material-icons light-blue-text">face</i>Idetificação do Aluno</a></li>
+                <li><a href="entregas.html"><i class="material-icons light-blue-text">priority_high</i>Entregas Pendentes</a></li>
+                <li><a href="avisos.html"><i class="material-icons light-blue-text">message</i>Avisos para o Professor</a></li>
+                <li><a href="disponivel.html"><i class="material-icons light-blue-text">assignment_turned_in</i>Disponibilidades</a></li>
+                <li><a href="recepcao.html"><i class="material-icons light-blue-text">assignment</i>Recepção</a></li>
+                <li><a href="boletim.html"><i class="material-icons light-blue-text">chrome_reader_mode</i>Boletim</a></li>
+
+
+            </ul>
+        </div><!--Menu Fim-->
+
+
+    </main>
+
+    <div class="relativo" style="bottom:30px">
+        <div style="position:initial;">
+            <div class="divider"></div>
+            <nav class="pos row black ">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="Boletim.html" class="breadcrumb">Turma</a>
+                        <a href="notas.html" class="breadcrumb">Notas</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="relativo" style="bottom:50px">
+        <div class="pos pos-cel" style="position:initial">
+            <div class="col s12">
+                <table class="highlight bordered responsive-table centered">
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>MB1</th>
+                            <th>SUB1</th>
+                            <th>MB2</th>
+                            <th>SUB2</th>
+                            <th>EXAME</th>
+                            <th>Final</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sieghart</td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+                <br />
+                </div>
+            </div>
+        </div>
+
+        <div class="relativo" style="bottom:50px">
+        <div class="pos pos-cel" style="position:initial">
+            <div class="col s12">
+                <table class="highlight bordered responsive-table centered">
+                    <thead>
+                        <tr>
+                            <th>Disciplina</th>
+                            <th>SQL</th>
+                            <th>Python</th>
+                            <th>HTML5</th>
+                            <th>CSS</th>
+                            <th>PHP</th>
+                            <th>Java</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Faltas</td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            <td><input disabled="" size="4" type="label" maxlength="4"></td>
+                            
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+                <br />
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer class="page-footer black">
+            <!--Rodapé-->
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Impacta</h5>
+                        <p class="grey-text text-lighten-4">A Faculdade Impacta Tecnologia nasceu da percepção de um Grupo, que desde 1998 é referência em TI, Gestão e Design, para suprir a falta de mão de obra especializada do mercado de tecnologia e oferecer uma formação completa e multidisciplinar aos alunos. </p>
+
+
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Contato</h5>
+                        <ul>
+                            <li class="white-text">Comercial</br>11 3254-8300</li>
+                            <li class="white-text">Secretaria</br>11 5593-5345</li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Endereço</h5>
+                        <ul>
+                            <li class="white-text">Unidade - Barra Funda Avenida Rudge, 315 - Barra Funda São Paulo / SP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    CNPJ: 59.069.914/0001-51
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!--  Scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+</body>
+</html>
