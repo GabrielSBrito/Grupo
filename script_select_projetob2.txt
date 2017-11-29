@@ -1,0 +1,51 @@
+/* Cadastro de Aluno */
+select RA, Nome, Senha, email, celular from Aluno
+order by RA
+
+/* Cadastro de Professor  */
+select RA, Nome, Senha, email, celular from Professor
+order by RA
+
+/* Busca de Matrícula por Semestre e Ano  */
+select * from Matricula
+where ano_ofertado = 2014 and semestre_ofertado = 1
+order by ano_ofertado
+
+/* Consulta de Matrículas anteriores */
+select * from Matricula
+where ano_ofertado < 2013
+order by ano_ofertado
+
+/* Página index */
+select ra, senha from Aluno
+order by ra
+
+select ra, senha from Professor
+order by ra
+
+/* Página Matrícula */
+select Nome,
+    'Primeiro nome' = Left(Nome, CharIndex(' ', Nome) - 1),
+    'Último nome'   = Reverse(Left(Reverse(Nome), CharIndex(' ', Reverse(Nome)) - 1)),
+    celular, email, sigla_curso
+from aluno
+
+/* Página Alterar_Trab */
+select data_limite_entrega, resposta.nome_disciplina, arquivosquestao.arquivo
+from questao
+inner join resposta on questao.nome_disciplina = resposta.nome_disciplina
+inner join arquivosquestao on questao.nome_disciplina = arquivosquestao.nome_disciplina
+
+/* Página Aula */
+select nome, periododisciplina.sigla_curso
+from disciplina
+inner join periododisciplina on disciplina.nome = periododisciplina .nome_disciplina
+
+/* Página Boletim */
+select sigla_curso, turma.nome_disciplina, turno, turma.semestre_ofertado
+from cursoturma
+inner join turma on cursoturma.nome_disciplina = turma .nome_disciplina
+
+/* Página Cancel_Matricula */
+select ra, nome
+from aluno

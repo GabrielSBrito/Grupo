@@ -95,20 +95,20 @@ select * from PeriodoDisciplina
 
 /* Dados para a tabela Aluno */
 
-insert Aluno(nome, email, celular, sigla_curso)
-values('Marcos de Souza', 'Marcos.Souza@hotmail.com', 11965471259, 'ADS')
+insert Aluno(senha, nome, email, celular, sigla_curso)
+values('impacta', 'Marcos de Souza', 'Marcos.Souza@hotmail.com', 11965471259, 'ADS')
 
-insert Aluno(nome, email, celular, sigla_curso)
-values('Rafaela de Morais', 'Rafaela.Morais@outlook.com', 1165237458, 'ADM')
+insert Aluno(senha, nome, email, celular, sigla_curso)
+values('impacta', 'Rafaela de Morais', 'Rafaela.Morais@outlook.com', 1165237458, 'ADM')
 
-insert Aluno(nome, email, celular, sigla_curso)
-values('João da Silva', 'Joao.Silva@yahoo.com', 1156248794, 'SI')
+insert Aluno(senha, nome, email, celular, sigla_curso)
+values('impacta', 'João da Silva', 'Joao.Silva@yahoo.com', 1156248794, 'SI')
 
-insert Aluno(nome, email, celular, sigla_curso)
-values('Augusto Medeiros', 'Augusto.Medeiros@uol.com', 1195871243, 'JD')
+insert Aluno(senha, nome, email, celular, sigla_curso)
+values('impacta', 'Augusto Medeiros', 'Augusto.Medeiros@uol.com', 1195871243, 'JD')
 
-insert Aluno(nome, email, celular, sigla_curso)
-values('Kelvin da Silva', 'Kelvin.Silva@uol.com', 1154782365, 'RC')
+insert Aluno(senha, nome, email, celular, sigla_curso)
+values('impacta', 'Kelvin da Silva', 'Kelvin.Silva@uol.com', 1154782365, 'RC')
 
 select * from Aluno
 
@@ -133,20 +133,20 @@ select * from DisciplinaOfertada
 
 /* Dados para a tabela Professor */
 
-insert Professor(apelido, nome, email, celular)
-values('Leonardo.Oliveira', 'Leonardo de Oliveira', 'Leonardo.Oliveira@uol.com', 11951423687)
+insert Professor(senha, apelido, nome, email, celular)
+values('impacta', 'Leonardo.Oliveira', 'Leonardo de Oliveira', 'Leonardo.Oliveira@uol.com', 11951423687)
 
-insert Professor(apelido, nome, email, celular)
-values('Maria.Andrade', 'Maria de Andrade', 'Maria.Andrade@uol.com', 1156327458)
+insert Professor(senha, apelido, nome, email, celular)
+values('impacta', 'Maria.Andrade', 'Maria de Andrade', 'Maria.Andrade@uol.com', 1156327458)
 
-insert Professor(apelido, nome, email, celular)
-values('Eduardo.Costa', 'Eduardo Costa', 'Eduardo.Costa@hotmail.com', 11952147458)
+insert Professor(senha, apelido, nome, email, celular)
+values('impacta', 'Eduardo.Costa', 'Eduardo Costa', 'Eduardo.Costa@hotmail.com', 11952147458)
 
-insert Professor(apelido, nome, email, celular)
-values('Theo.Lago', 'Theo Lago', 'Theo.Lago@outlook.com', 11952001420)
+insert Professor(senha, apelido, nome, email, celular)
+values('impacta', 'Theo.Lago', 'Theo Lago', 'Theo.Lago@outlook.com', 11952001420)
 
-insert Professor(apelido, nome, email, celular)
-values('José Nascimento', 'José Nascimento', 'Jose.Nascimento@yahoo.com', 11952410032)
+insert Professor(senha, apelido, nome, email, celular)
+values('impacta', 'José Nascimento', 'José Nascimento', 'Jose.Nascimento@yahoo.com', 11952410032)
 
 select * from Professor
 
